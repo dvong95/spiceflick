@@ -6,10 +6,19 @@ export const name = { first: "David", last: "Vong" };
 
 const page = () => {
   return (
-    <div>
-      <UserSidebar />
-      <ThemeSwitcher />
-    </div>
+    <>
+      <div className="flex gap-6">
+        <div className="basis-1/3 flex justify-end">
+          <div className="w-fit">
+            <UserSidebar />
+          </div>
+        </div>
+        <div className="basis-1/3">
+          <ThemeSwitcher />
+        </div>
+        <div className="basis-1/3"></div>
+      </div>
+    </>
   );
 };
 

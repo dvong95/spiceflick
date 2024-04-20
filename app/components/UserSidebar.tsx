@@ -1,31 +1,41 @@
-import { Avatar, Divider } from "@nextui-org/react";
-import Link from "next/link";
+import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
+import { Divider } from "@nextui-org/divider";
+import { Avatar } from "@nextui-org/avatar";
+import { Link } from "@nextui-org/link";
 import { name } from "../page";
-
+import IconFeed from "@/public/IconFeed";
+import IconPersonFill from "@/public/IconPersonFill";
+import IconNewspaperVariantOutline from "@/public/IconNewspaperVariantOutline";
+import IconCalendarEvent from "@/public/IconCalendarEvent";
+import IconAccountGroup from "@/public/IconAccountGroup";
+import IconNotificationsOutline from "@/public/IconNotificationsOutline";
+import IconSettingsOutline from "@/public/IconSettingsOutline";
 
 export default function UserSidebar() {
   return (
     <>
-      <div className="w-72">
-        <div className="w-full border border-default-300 rounded-t-lg rounded-b-lg">
-          <div className="h-12 rounded-t-lg bg-slate-700"></div>
-          <div className="text-center text-default-500">
-            <div className="relative bottom-4 flex justify-center">
+      <div className="min-w-56 max-w-72">
+        <Card className="text-center text-default-500">
+          <CardHeader className="block p-0">
+            <div className="mt-6 mb-4 flex justify-center">
               <Avatar
                 isBordered
+                isFocusable
+                color="primary"
                 showFallback
                 name={name.first}
                 radius="sm"
                 src="https://cdn.mos.cms.futurecdn.net/p5quSf4dZXctG9WFepXFdR-650-80.jpg.webp"
-                size="lg" />
+                size="lg"
+              />
             </div>
             <h1 className="font-bold text-xl text-default-foreground">
               {name.first} {name.last}
             </h1>
-            <small className="text-default-500">
-              Web Developer at Sheridan College
-            </small>
-            <p className="mx-6 py-3 text-medium font-normal">
+          </CardHeader>
+          <CardBody className="text-center">
+            <small>Web Developer at Sheridan College</small>
+            <p className="mx-6 py-3 min-w-48 text-medium">
               I&apos;d love to change the world, but they won&apos;t give me the
               source code.
             </p>
@@ -45,33 +55,84 @@ export default function UserSidebar() {
                 <small>Following</small>
               </div>
             </div>
-            <Divider className="bg-default-200 my-5 mx-auto text-center w-10/12" />
-          </div>
-          <div className="font-bold text-medium">
-            <ul>
-              <li className="my-4 ml-4"><Link href="#">Feed</Link></li>
-              <li className="my-4 ml-4"><Link href="#">Connections</Link></li>
-              <li className="my-4 ml-4"><Link href="#">Latest News</Link></li>
-              <li className="my-4 ml-4"><Link href="#">Events</Link></li>
-              <li className="my-4 ml-4"><Link href="#">Groups</Link></li>
-              <li className="my-4 ml-4"><Link href="#">Notifications</Link></li>
-              <li className="my-4 ml-4"><Link href="#">Settings</Link></li>
-            </ul>
-          </div>
-          <Divider className="w-full mt-8 bg-default-200" />
-          <div className="text-primary-500 font-semibold text-sm my-2 text-center hover:text-primary-600">
-            <Link href="#">View Profile</Link>
-          </div>
+          </CardBody>
+          <Divider className="bg-default-200 mx-auto my-4 w-10/12" />
+          <CardFooter className="block px-0">
+            <div className="mx-2 font-bold text-left text-medium">
+              <ul className="last-of-type:pb-1">
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconFeed className="size-5 mx-2" />
+                    Feed
+                  </Link>
+                </li>
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconPersonFill className="size-5 mx-2" />
+                    Connections
+                  </Link>
+                </li>
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconNewspaperVariantOutline className="size-5 mx-2" />
+                    Latest News
+                  </Link>
+                </li>
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconCalendarEvent className="size-5 mx-2" />
+                    Events
+                  </Link>
+                </li>
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconAccountGroup className="size-5 mx-2" />
+                    Groups
+                  </Link>
+                </li>
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconNotificationsOutline className="size-5 mx-2" />
+                    Notifications
+                  </Link>
+                </li>
+                <li className="my-4 ml-4">
+                  <Link href="#" color="foreground">
+                    <IconSettingsOutline className="size-5 mx-2" />
+                    Settings
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <Divider className="mt-3 bg-default-200" />
+            <div className="text-primary-500 font-semibold text-sm mt-2 text-center">
+              <Link href="#">View Profile</Link>
+            </div>
+          </CardFooter>
+        </Card>
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-5">
+          <Link href="#" size="sm" className="text-default-500">
+            About
+          </Link>
+          <Link href="#" size="sm" className="text-default-500">
+            Settings
+          </Link>
+          <Link href="#" size="sm" className="text-default-500">
+            Support
+          </Link>
+          <Link href="#" size="sm" className="text-default-500">
+            Docs
+          </Link>
+          <Link href="#" size="sm" className="text-default-500">
+            Help
+          </Link>
+          <Link href="#" size="sm" className="text-default-500">
+            Privacy &amp; terms
+          </Link>
         </div>
-        <div className="flex flex-wrap justify-center text-sm text-default-500 gap-x-6 gap-y-2 mt-5">
-          <Link href="#">About</Link>
-          <Link href="#">Settings</Link>
-          <Link href="#">Support</Link>
-          <Link href="#">Docs</Link>
-          <Link href="#">Help</Link>
-          <Link href="#">Privacy &amp; terms</Link>
-        </div>
-        <small className="block text-center my-1 text-default-500">&copy;2024 SpiceFlick</small>
+        <small className="block text-center my-1 text-default-500">
+          &copy;2024 SpiceFlick
+        </small>
       </div>
     </>
   );
