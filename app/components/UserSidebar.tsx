@@ -3,26 +3,25 @@ import { Divider } from "@nextui-org/divider";
 import { Avatar } from "@nextui-org/avatar";
 import { Link } from "@nextui-org/link";
 import { name } from "../page";
-import IconFeed from "@/public/IconFeed";
-import IconPersonFill from "@/public/IconPersonFill";
-import IconNewspaperVariantOutline from "@/public/IconNewspaperVariantOutline";
-import IconCalendarEvent from "@/public/IconCalendarEvent";
-import IconAccountGroup from "@/public/IconAccountGroup";
-import IconNotificationsOutline from "@/public/IconNotificationsOutline";
-import IconSettingsOutline from "@/public/IconSettingsOutline";
+import IconFeed from "@/public/icons/IconFeed";
+import IconPersonFill from "@/public/icons/IconPersonFill";
+import IconNewspaperVariantOutline from "@/public/icons/IconNewspaperVariantOutline";
+import IconCalendarEvent from "@/public/icons/IconCalendarEvent";
+import IconAccountGroup from "@/public/icons/IconAccountGroup";
+import IconNotificationsOutline from "@/public/icons/IconNotificationsOutline";
+import IconSettingsOutline from "@/public/icons/IconSettingsOutline";
 
 export default function UserSidebar() {
   return (
     <>
       <div className="min-w-56 max-w-72">
         <Card className="text-center text-default-500">
-          <CardHeader className="block p-0">
-            <div className="mt-6 mb-4 flex justify-center">
+          <CardHeader className="block">
+            <div className="my-3 flex justify-center">
               <Avatar
                 isBordered
-                isFocusable
-                color="primary"
                 showFallback
+                color="primary"
                 name={name.first}
                 radius="sm"
                 src="https://cdn.mos.cms.futurecdn.net/p5quSf4dZXctG9WFepXFdR-650-80.jpg.webp"

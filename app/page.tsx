@@ -1,22 +1,17 @@
 import React from "react";
 import UserSidebar from "./components/UserSidebar";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
+import ThemeSwitch from "./components/ThemeSwitch";
+import FollowSidebar from "./components/FollowSidebar";
 
 export const name = { first: "David", last: "Vong" };
 
 const page = () => {
   return (
     <>
-      <div className="flex gap-6">
-        <div className="basis-1/3 flex justify-end">
-          <div className="w-fit">
-            <UserSidebar />
-          </div>
-        </div>
-        <div className="basis-1/3">
-          <ThemeSwitcher />
-        </div>
-        <div className="basis-1/3"></div>
+      <div className="flex gap-11">
+        <ThemeSwitch />
+        <UserSidebar />
+        <FollowSidebar />
       </div>
     </>
   );
