@@ -14,7 +14,7 @@ import IconSettingsOutline from "@/public/icons/IconSettingsOutline";
 export default function UserSidebar() {
   return (
     <>
-      <div className="min-w-56 max-w-72">
+      <div className="w-72">
         <Card className="text-center text-default-500">
           <CardHeader className="block">
             <div className="my-3 flex justify-center">

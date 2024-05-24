@@ -14,7 +14,7 @@ const users = [
 const FollowSidebar = () => {
   return (
     <>
-        <Card className='h-fit'>
+        <Card className='h-fit min-w-72'>
             <CardHeader>
                 <h1 className='font-bold text-xl text-default-foreground'>Who to follow</h1>
             </CardHeader>

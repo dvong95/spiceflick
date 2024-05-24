@@ -4,17 +4,21 @@ import ThemeSwitch from "./components/ThemeSwitch";
 import FollowSidebar from "./components/FollowSidebar";
 import Story from "./components/Story";
 import StoryGroup from "./components/StoryGroup";
+import UserPost from "./components/UserPost";
 
 export const name = { first: "David", last: "Vong" };
 
 const page = () => {
   return (
     <>
-      <div className="flex gap-11">
-        <ThemeSwitch />
+      <ThemeSwitch />
+      <div className="flex gap-11 justify-center">
         <UserSidebar />
+        <div className="">
+          <StoryGroup />
+          <UserPost />
+        </div>
         <FollowSidebar />
-        <StoryGroup />
       </div>
     </>
   );

@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@nextui-org/avatar": "^2.0.27",
-    "@nextui-org/button": "^2.0.30",
-    "@nextui-org/card": "^2.0.27",
+    "@nextui-org/button": "^2.0.31",
+    "@nextui-org/card": "^2.0.28",
     "@nextui-org/divider": "^2.0.27",
     "@nextui-org/image": "^2.0.27",
+    "@nextui-org/input": "^2.1.21",
     "@nextui-org/link": "^2.0.29",
     "@nextui-org/switch": "^2.0.28",
     "@nextui-org/system": "^2.1.2",
@@ -22,7 +23,7 @@
     "framer-motion": "^11.1.5",
     "next": "14.2.2",
     "next-themes": "^0.3.0",
-    "nextui-cli": "^0.2.0",
+    "nextui-cli": "^0.2.1",
     "react": "^18",
     "react-dom": "^18"
   },

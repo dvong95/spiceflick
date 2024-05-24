@@ -14,7 +14,7 @@ const UserFollow = () => {
             src: "https://cdn.mos.cms.futurecdn.net/p5quSf4dZXctG9WFepXFdR-650-80.jpg.webp",
           }}
         />
-        <div className="inline-block relative ml-8 bottom-3">
+        <div className="inline-block relative ml-12 bottom-3">
         <Button isIconOnly radius="full" className="group hover:bg-primary-500 "><IconAddFill className="group-hover:fill-white" /></Button>
         </div>
       </div>
