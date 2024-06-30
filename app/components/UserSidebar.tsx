@@ -31,10 +31,10 @@ export default function UserSidebar() {
             <h1 className="font-bold text-xl text-default-foreground">
               {name.first} {name.last}
             </h1>
+            <small>Web Developer at Sheridan College</small>
           </CardHeader>
           <CardBody className="text-center">
-            <small>Web Developer at Sheridan College</small>
-            <p className="mx-6 py-3 min-w-48 text-medium">
+            <p className="mx-6 pb-3 min-w-48 text-medium">
               I&apos;d love to change the world, but they won&apos;t give me the
               source code.
             </p>
