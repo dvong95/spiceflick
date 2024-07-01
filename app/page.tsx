@@ -5,6 +5,7 @@ import FollowSidebar from "./components/FollowSidebar";
 import Story from "./components/Story";
 import StoryGroup from "./components/StoryGroup";
 import UserPost from "./components/UserPost";
+import TestingGit from "./components/TestingGit";
 
 export const name = { first: "David", last: "Vong" };
 
@@ -19,6 +20,7 @@ const page = () => {
           <UserPost />
         </div>
         <FollowSidebar />
+        <TestingGit />
       </div>
     </>
   );
