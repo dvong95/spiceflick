@@ -18,7 +18,6 @@ const page = () => {
           <UserPost />
         </div>
         <FollowSidebar />
-       
       </div>
     </>
   );
