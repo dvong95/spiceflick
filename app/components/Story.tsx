@@ -6,7 +6,7 @@ import React from "react";
 const Story = ({ username }: any) => {
   return (
     <>
-      <Card isPressable onPress={() => console.log("Hi")} className="min-w-fit">
+      <Card isPressable className="min-w-fit">
         <Image
           isZoomed
           removeWrapper
