@@ -2,7 +2,7 @@ import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
 import { Avatar } from "@nextui-org/avatar";
 import { Link } from "@nextui-org/link";
-import { name } from "../page";
+import users from "../data/Users";
 import IconFeed from "@/public/icons/IconFeed";
 import IconPersonFill from "@/public/icons/IconPersonFill";
 import IconNewspaperVariantOutline from "@/public/icons/IconNewspaperVariantOutline";
@@ -22,16 +22,16 @@ export default function UserSidebar() {
                 isBordered
                 showFallback
                 color="primary"
-                name={name.first}
+                name={users[0].name}
                 radius="sm"
-                src="https://cdn.mos.cms.futurecdn.net/p5quSf4dZXctG9WFepXFdR-650-80.jpg.webp"
+                src={users[0].profilePicture}
                 size="lg"
               />
             </div>
             <h1 className="font-bold text-xl text-default-foreground">
-              {name.first} {name.last}
+              {users[0].name}
             </h1>
-            <small>Web Developer at Sheridan College</small>
+            <small>{users[0].occupation} at Sheridan College</small>
           </CardHeader>
           <CardBody className="text-center">
             <p className="mx-6 pb-3 min-w-48 text-medium">

@@ -2,11 +2,8 @@ import React from "react";
 import UserSidebar from "./components/UserSidebar";
 import ThemeSwitch from "./components/ThemeSwitch";
 import FollowSidebar from "./components/FollowSidebar";
-import Story from "./components/Story";
 import StoryGroup from "./components/StoryGroup";
 import UserPost from "./components/UserPost";
-
-export const name = { first: "David", last: "Vong" };
 
 const page = () => {
   return (
@@ -14,7 +11,7 @@ const page = () => {
       <ThemeSwitch />
       <div className="flex gap-11 justify-center">
         <UserSidebar />
-        <div className="">
+        <div>
           <StoryGroup />
           <UserPost />
         </div>
