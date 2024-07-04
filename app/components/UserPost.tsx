@@ -3,8 +3,8 @@ import { Button } from "@nextui-org/button";
 import { Card, CardFooter } from "@nextui-org/card";
 import { Textarea } from "@nextui-org/input";
 import { Link } from "@nextui-org/link";
-import { User } from "@nextui-org/user";
 import React from "react";
+import users from "../data/Users";
 
 const UserPost = () => {
   return (
@@ -13,7 +13,7 @@ const UserPost = () => {
         <Card>
           <div className="flex">
             <Link href="#" className="mx-3 my-auto">
-              <Avatar src="https://cdn.mos.cms.futurecdn.net/p5quSf4dZXctG9WFepXFdR-650-80.jpg.webp" />
+              <Avatar src={users[0].profilePicture} />
             </Link>
             <Textarea
               placeholder="What's on your mind?"
