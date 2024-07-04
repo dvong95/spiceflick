@@ -3,13 +3,13 @@ import Story from "./Story";
 
 const users = [
   {
-    name: "David Vong",
+    name: "Hilary Duff",
   },
   {
-    name: "Katherine McMaster",
+    name: "Some Name",
   },
   {
-    name: "Scott McMaster",
+    name: "Another Name",
   },
   {
     name: "Poopy Poop",
