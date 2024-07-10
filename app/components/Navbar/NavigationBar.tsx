@@ -13,9 +13,9 @@ import {
   DropdownSection,
 } from "@nextui-org/react";
 import { FiMessageCircle, FiMoreHorizontal } from "react-icons/fi";
-import IUser from "../models/IUser";
-import users from "../data/Users";
-import ThemeSwitcher from "./ThemeSwitch";
+import IUser from "../../models/IUser";
+import users from "../../data/Users";
+import ThemeSwitcher from "../ThemeSwitch";
 
 const NavigationBar = () => {
   return (
@@ -97,15 +97,15 @@ const NavigationBar = () => {
                     </Button>
                   </DropdownItem>
                 </DropdownSection>
-                {users.map((dm) => (
-                  <DropdownSection
-                    key={`dm${dm.id}`}
-                    className="max-h-[100px] overflow-hidden"
-                  >
-                    <DropdownItem className="flex items-center justify-between space-x-2">
+                <DropdownSection className="">
+                  {users.map((dm) => (
+                    <DropdownItem
+                      key={`dm${dm.id}`}
+                      className="flex items-center justify-between space-x-2 max-h-[100px] overflow-hidden"
+                    >
                       <div className="flex justify-between">
                         <div className="flex items-center space-x-2">
-                          <User avatarProps={{ src: dm.profilePicture }} />
+                          <User name avatarProps={{ src: dm.profilePicture }} />
                           <div>
                             <p className="text-sm font-bold">{dm.name}</p>
                             <p className="text-sm max-w-[150px] text-gray-500 truncate text-ellipsis">
@@ -118,8 +118,8 @@ const NavigationBar = () => {
                         </div>
                       </div>
                     </DropdownItem>
-                  </DropdownSection>
-                ))}
+                  ))}
+                </DropdownSection>
               </DropdownMenu>
             </Dropdown>
           </NavbarItem>

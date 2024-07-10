@@ -2,7 +2,7 @@ import { Button } from "@nextui-org/button";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import React from "react";
 import UserFollow from "./UserFollow";
-import users from "../data/Users";
+import users from "../../data/Users";
 
 const FollowSidebar = () => {
   return (

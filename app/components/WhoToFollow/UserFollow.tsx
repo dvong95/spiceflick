@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import { User } from "@nextui-org/user";
 import React from "react";
-import IUser from "../models/IUser";
+import IUser from "../../models/IUser";
 
 const UserFollow: React.FC<{ user: IUser }> = ({ user }) => {
   return (
